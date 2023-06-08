@@ -1,0 +1,151 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-background);
+  background-image: url('../images/bg-desktop.svg');
+  background-size: cover;
+}
+
+.container {
+  padding-inline: 80px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.header {
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  display: flex;
+  column-gap: 59px;
+  margin-bottom: 27px;
+  margin-inline: auto;
+}
+
+.hero__image {
+  width: 709px;
+  height: 506px;
+}
+
+.hero__header {
+  margin-top: 29px;
+}
+
+.hero__heading {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  max-width: 487px;
+}
+
+.hero__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-block: 24px;
+  max-width: 550px;
+}
+
+.button__register {
+  background: #ffffff;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #684bb1;
+  padding-block: 13px 16px;
+  padding-inline: 64px 63px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0;
+}
+
+.button__register:hover {
+  background: var(--button-hover);
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 1110px) {
+  body {
+    background-image: url('../images/bg-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    padding-inline: 0px;
+  }
+
+  .header {
+    padding-top: 38.2px;
+    padding-bottom: 69.8px;
+    padding-inline: 40px;
+  }
+
+  .header img {
+    width: 120px;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-bottom: 75px;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    padding-inline: 40px;
+  }
+
+  .hero__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 36px 35px;
+  }
+
+  .button__register {
+    font-size: 12px;
+    line-height: 18px;
+    padding-block: 11px;
+    padding-inline: 76px 75px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footer img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hero__heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .hero__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
