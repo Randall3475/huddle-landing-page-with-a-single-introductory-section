@@ -16,6 +16,11 @@ body {
   padding-bottom: 100px;
 }
 
+.header img {
+  width: 200px;
+  height: 32px;
+}
+
 .hero {
   display: flex;
   column-gap: 59px;
